@@ -15,6 +15,6 @@ RUN curl -sSL https://pkgs.netbird.io/debian/public.key | gpg --dearmor --output
 
 RUN apt-get update && \
     apt-get install \
-    netbird
+    netbird \
     -y && \
     rm -rf /var/lib/apt/lists/*
